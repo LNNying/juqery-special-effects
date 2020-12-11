@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="  width = device-width,height = device-height,initial-scale = 1,
+        minimum-scale = 1,
+        maximum-scale = 1,
+        user-scalable = no">
+    <title>盈智宣传大屏</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="lnn-bage"></div>
+    <div class="lnn-weather-info">
+        <div class="lnn-all-weather" id="lnn-weather">多云</div>
+        <div class="lnn-all-weather" id="lnn-weather-rain">南风5-6级</div>
+        <div class="lnn-all-weather" id="lnn-weather-temp">11-19℃</div>
+    </div>
+    <div class="lnn-date">
+        <div id="lnn-date-info">2020年12月8日 11:11</div>
+    </div>
+    <div id="lnn-contant">
+        <div id="lnn-head">
+            <div class="lnn-head-title"></div>
+            <!-- <div class="lnn-head-bottom" id="lnn-line"></div> -->
+        </div>
+        <div id="lnn-detail-info">
+            <div class="left-top">
+                <div class="lnn-title">
+                    <b>公司里程碑</b>
+                </div>
+                <div class="lnn-both-contant">
+                    <div class="lnn-curve">
+                        <div class="lnn-curve-line">
+                            <div id="lnn-real-curve-line"></div>
+                            <div class="lnn-year" id="lnn-first-year"></div>
+                            <div class="lnn-year lnn-year-two" id="lnn-second-year"></div>
+                            <div class="lnn-time">
+                                <span id="lnn-first-month"></span>
+                            </div>
+                            <div class="lnn-time">
+                                <span id="lnn-second-month"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="lnn-body">
+                        <div id="lnn-body-content">
+                            <div class="lnn-body-out-content">
+                                <div class="lnn-body-in-content" id="lnn-first-img"></div>
+                                <div class="lnn-body-foot">
+                                    <div class="lnn-foot-desc">
+                                        <div class="lnn-real-foot-desc" id="lnn-first-desc"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lnn-body-out-content">
+                                <div class="lnn-body-in-content" id="lnn-second-img"></div>
+                                <div class="lnn-body-foot">
+                                    <div class="lnn-foot-desc">
+                                        <div class="lnn-real-foot-desc" id="lnn-second-desc"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lnn-both-sides-bottom"></div>
+            </div>
+            <div class="left-bottom">
+                <div class="lnn-title">
+                    <b>公司动态</b>
+                </div>
+                <div class="lnn-both-contant" id="lnn-left-dynamic">
+                    <div id="lnn-dynamic"></div>
+                </div>
+            </div>
+            <div class="center-top">
+                <div id="lnn-center-contant">
+                    <div id="lnn-video"></div>
+                </div>
+            </div>
+
+            <div class="center-bottom">
+                <div class="lnn-title">
+                    <b>公司通知</b>
+                </div>
+                <div class="lnn-center-bottom-contant" id="lnn-center-dynamic">
+                    <div id="lnn-real-dynamic"></div>
+                </div>
+            </div>
+
+            <div class="right-top">
+                <div class="lnn-title">
+                    <b>当日出勤情况</b>
+                </div>
+                <div id="lnn-person"></div>
+                <div id="lnn-person-info">
+                    <div class="lnn-info">
+                        <div class="lnn-info-title">应到岗</div>
+                        <div class="lnn-info-num"><span id="lnn-arrive-num"></span><span>人</span></div>
+                    </div>
+                    <div class="lnn-info">
+                        <div class="lnn-info-title">实到岗</div>
+                        <div class="lnn-info-num"><span id="lnn-on-duty-num"></span><span>人</span></div>
+                    </div>
+                    <div class="lnn-info">
+                        <div class="lnn-info-title">请假</div>
+                        <div class="lnn-info-num"><span id="lnn-leave-num"></span><span>人</span></div>
+                    </div>
+                    <div class="lnn-info">
+                        <div class="lnn-info-title">出差</div>
+                        <div class="lnn-info-num"><span id="lnn-travel-num"></span><span>人</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-bottom">
+                <div class="lnn-title">
+                    <b>当日出差分布</b>
+                </div>
+                <div class="lnn-travel-map">
+                    <div class="lnn-travel-info" id="lnn-travel"></div>
+                    <div class="lnn-map-tip">
+                        <div class="lnn-tip" style="--color: rgb(2, 90, 86);--top: 6px">10人以上</div>
+                        <div class="lnn-tip" style="--color: rgb(29, 175, 175);--top: 26px">8-9人</div>
+                        <div class="lnn-tip" style="--color: rgb(97, 235, 235);--top: 45px">6-7人</div>
+                        <div class="lnn-tip" style="--color: rgb(145, 237, 240);--top: 65px">4-5人</div>
+                        <div class="lnn-tip" style="--color: rgb(181, 245, 245);--top: 85px">2-3人</div>
+                        <div class="lnn-tip" style="--color: rgb(244, 251, 252);--top: 104px">0-1人</div>
+                    </div>
+                    <div id="lnn-map"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="lnn-footer"></div> -->
+    </div>
+
+    <script src="js/jQuery1.11.3.min.js"></script>
+    <script src="js/reveal-it.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
+    <script src="js.common/common.js"></script>
+    <script src="js.common/simulationData.js"></script>
+    <script src="js.common/operation.js"></script>
+</body>
+
+</html>

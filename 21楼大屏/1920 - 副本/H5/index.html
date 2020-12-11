@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="  width = device-width,height = device-height,initial-scale = 1,
+        minimum-scale = 1,
+        maximum-scale = 1,
+        user-scalable = no">
+    <title>盈智宣传大屏</title>
+    <link href="css/index1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="lnn-bage"></div>
+    <div class="lnn-weather-info">
+        <div class="lnn-all-weather" id="lnn-weather">多云</div>
+        <div class="lnn-all-weather" id="lnn-weather-rain">南风5-6级</div>
+        <div class="lnn-all-weather" id="lnn-weather-temp">11-19℃</div>
+    </div>
+    <div class="lnn-date">
+        <div id="lnn-date-info">2020年12月8日 11:11</div>
+    </div>
+
+    <div id="lnn-contant">
+        <div class="lnn-left-back"></div>
+        <div class="lnn-right-back"></div>
+        <div id="lnn-head">
+            <div class="lnn-head-title"></div>
+        </div>
+        <div class="lnn-agency"></div>
+        <div id="lnn-detail-info">
+            <!-- 开始 -->
+            <div class="lnn-left-top">
+                <div class="lnn-title" style="--width: 90px;--top: 10px">
+                    <b>公司里程碑</b>
+                </div>
+                <div class="lnn-both-contant">
+                    <div class="lnn-head-horn"></div>
+                    <div class="lnn-left-top-head">
+                        <div id="lnn-milepost"></div>
+                    </div>
+                    <div id="lnn-icon-line"> 
+                        <!-- 0 ， 135 ，272px-->
+                        <div id="lnn-real-icon-line"></div>
+                    </div>
+                    <div class="lnn-left-top-content">
+                        <div class="lnn-content-title"></div>
+                        <div id="lnn-content-desc"></div>
+                        <div class="lnn-content-img"></div>
+                    </div>
+                </div>
+                <div class="lnn-both-sides-bottom"></div>
+            </div>
+            <div class="lnn-left-bottom">
+                <div class="lnn-title" style="--width: 80px">
+                    <b>公司动态</b>
+                </div>
+                <div class="lnn-both-contant" id="lnn-left-dynamic">
+                    <div id="lnn-dynamic"></div>
+                </div>
+            </div>
+            
+            <div class="lnn-center-top">
+                <div id="lnn-center-contant">
+                    <div id="lnn-video"></div>
+                </div>
+                <div class="lnn-center-top-bottom"></div>
+            </div>
+
+            <div class="lnn-center-bottom">
+                <div class="lnn-title" style="--width: 80px">
+                    <b>公司通知</b>
+                </div>
+                <div class="lnn-center-bottom-contant" id="lnn-center-dynamic">
+                    <div id="lnn-real-dynamic"></div>
+                </div>
+            </div>
+
+            <div class="lnn-right-top">
+                <div class="lnn-title" style="--width: 105px;--top: 10px">
+                    <b>当日出勤情况</b>
+                </div>
+                <div id="lnn-person">
+                    <div id="lnn-real-person">
+
+                    </div>
+                </div>
+                <div id="lnn-person-info">
+                    <div class="lnn-info">
+                        <div class="lnn-arrive-info" style="background-image: url(img/arrive-100.png);--color: rgb(13,183,249)">
+                            <span id="lnn-arrive-num" style="top: -25px"></span>
+                        </div>
+                        <div class="lnn-info-title">应到岗</div>
+                    </div>
+                    <div class="lnn-info">
+                        <div class="lnn-arrive-info" id="lnn-on-duty" style="--color: rgb(102,250,244)">
+                            <span id="lnn-on-duty-num"></span>
+                        </div>
+                        <div class="lnn-info-title">实到岗</div>
+                    </div>
+                    <div class="lnn-info">
+                        <div class="lnn-arrive-info" id="lnn-leave" style="--color: rgb(253,205,88)">
+                            <span id="lnn-leave-num"></span>
+                        </div>
+                        <div class="lnn-info-title">请假</div>
+                    </div>
+                    <div class="lnn-info">
+                        <div class="lnn-arrive-info" id="lnn-duty-travel" style="--color: rgb(114,180,255)">
+                            <span id="lnn-travel-num"></span>
+                        </div>
+                        <div class="lnn-info-title">出差</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lnn-right-bottom">
+                <div class="lnn-title" style="--width: 106px">
+                    <b>当日出差分布</b>
+                </div>
+                <div class="lnn-travel-map">
+                    <div class="lnn-travel-info" id="lnn-travel"></div>
+                    <div class="lnn-map-tip">
+                        <div class="lnn-tip" style="--color: rgb(237, 174, 93);--top: 6px">10人以上</div>
+                        <div class="lnn-tip" style="--color: rgb(29, 130, 255);--top: 26px">7-9人</div>
+                        <div class="lnn-tip" style="--color: rgb(16, 170, 180);--top: 45px">4-6人</div>
+                        <div class="lnn-tip" style="--color:rgb(29, 178, 255);--top: 65px">0-3人</div>
+                    </div>
+                    <div id="lnn-map"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="lnn-footer"></div> -->
+    </div>
+
+    <script src="js/jQuery1.11.3.min.js"></script>
+    <script src="js/reveal-it.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
+    <script src="js.common/common.js"></script>
+    <script src="js.common/simulationData.js"></script>
+    <script src="js.common/index.js"></script>
+</body>
+
+</html>
